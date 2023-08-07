@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while IFS= read -r filename; do
+    touch "$filename"
+done < file.txt
+

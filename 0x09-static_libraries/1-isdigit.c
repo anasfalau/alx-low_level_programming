@@ -1,13 +1,10 @@
-/**
- * _isdigit - checks if int is digit or not
- *
- * @c: int c, represents a char
- *
- * Return: 1 if c is digit, 0 otherwise
- */
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
 int _isdigit(int c)
 {
-	if (c >= 48 && c <= 57) /* ascii 0..9 values */
-		return (1);
-	return (0);
+	return isdigit(c);
 }
