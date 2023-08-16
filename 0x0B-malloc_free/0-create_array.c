@@ -22,7 +22,7 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
-	c_add = malloc(sizeof(c_add) * size);
+	c_add = malloc(sizeof(c_add) * (size - 1));
 	if (c_add == NULL)
 		return (NULL);
 	while (i < size)
