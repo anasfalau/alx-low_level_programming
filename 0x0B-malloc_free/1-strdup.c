@@ -3,17 +3,15 @@
  * Auth: Anas Ibrahim
  */
 
-/**
- * _strdup - function that duplicate str
- * Description: A program thatreturns a pointer to a newly
- *		allocated space in memory, which contains a
- *		copy of the string given as a parameter.
- * @str: arg
- * Return:  (0) on success
- */
-
 #include "main.h"
 #include <stdlib.h>
+
+/**
+ * _str_len - function that calculate  str len
+ * Description: A program that returns a str len
+ * @s: arg
+ * Return:  (0) on success
+ */
 
 int _str_len(char *s)
 {
@@ -23,6 +21,15 @@ int _str_len(char *s)
 		i++;
 	return (i);
 }
+
+/**
+ * _strdup - function that duplicate str
+ * Description: A program thatreturns a pointer to a newly
+ *		allocated space in memory, which contains a
+ *		copy of the string given as a parameter.
+ * @str: arg
+ * Return:  (0) on success
+ */
 
 char *_strdup(char *str)
 {
