@@ -14,7 +14,6 @@
 
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 int _str_len(char *s)
 {
@@ -30,7 +29,7 @@ char *_strdup(char *str)
 	int i = 0;
 	char *str_dup = malloc(sizeof(*str) * _str_len(str));
 
-	if (str == NULL)
+	if (str == NULL || str_dup == NULL)
 		return (NULL);
 	while (str[i] != '\0')
 	{
