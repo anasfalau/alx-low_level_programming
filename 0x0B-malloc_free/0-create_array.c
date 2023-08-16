@@ -23,6 +23,8 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 		return (NULL);
 	c_add = malloc(4 * size);
+	if(c_add == NULL)
+		return (NULL);
 	while (i < size)
 	{
 		c_add[i] = c;
