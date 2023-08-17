@@ -3,7 +3,6 @@
  * Auth: Anas Ibrahim
  */
 
-#include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
 
@@ -44,7 +43,6 @@ char *str_concat(char *s1, char *s2)
 	int len_2 = _str_len(s2);
 	char *str_concat;
 
-	printf("len_1:%d\n len_2:%d\n", len_1, len_2);
 	str_concat = malloc(sizeof(*s1) * (len_1 + len_2) + 1);
 	if (str_concat == NULL)
 		return (NULL);
