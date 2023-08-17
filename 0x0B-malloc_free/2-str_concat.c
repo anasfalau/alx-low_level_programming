@@ -3,6 +3,7 @@
  * Auth: Anas Ibrahim
  */
 
+#include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
 
@@ -17,6 +18,10 @@ int _str_len(char *s)
 {
 	int i = 0;
 
+	if (s == NULL)
+	{
+		s = " ";
+	}
 	while (s[i] != '\0')
 		i++;
 	return (i);
@@ -39,11 +44,7 @@ char *str_concat(char *s1, char *s2)
 	int len_2 = _str_len(s2);
 	char *str_concat;
 
-	if (s1 == NULL || s2 == NULL)
-	{
-		s1 = "";
-		s2 = "";
-	}
+	printf("len_1:%d\n len_2:%d\n", len_1, len_2);
 	str_concat = malloc(sizeof(*s1) * (len_1 + len_2) + 1);
 	if (str_concat == NULL)
 		return (NULL);
