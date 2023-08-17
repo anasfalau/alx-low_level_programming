@@ -55,8 +55,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	while (s2[j] != '\0')
 	{
-		str_concat[len_1 + i] = s2[j];
-		i++;
+		str_concat[len_1 + j] = s2[j];
 		j++;
 	}
 	return (str_concat);
